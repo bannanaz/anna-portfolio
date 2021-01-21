@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import anna_square from './img/anna_square.jpg';
+import Nav from './Nav';
 
 
 const StyledDivBackr = styled.div`
@@ -8,29 +9,35 @@ background-color: #F4F9F7;
 `;
 
 const StyledDiv = styled.div`
-display: flex;
-justify-content: space-around;
-align-content: center;
-flex-wrap: wrap-reverse;
-background-color: #F4F9F7;
-width: 80%;
-align-items: center;
 margin: auto;
+padding: 40px 0px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap-reverse;
+align-items: center;
+background-color: #F4F9F7;
+width: 85%;
+
 
 img {
-    width: 330px;
-    height: auto;
+    flex: 1;
+    max-width: 320px;
+    justify-content: center;
     border-radius: 50%;
     border: solid 20px white;
-    margin: 60px 30px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
 
  p {    
     flex: 1;
     font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
-    min-width: 450px;
-    margin: 0px 30px;
+    font-size: 20px;
+    max-width: 550px;
+    min-width: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
     }
 `;
 
@@ -40,7 +47,14 @@ function IntroSection() {
     return (
         <StyledDivBackr>
             <StyledDiv>
-                <p>Hi, I’m Anna, a future Front End Developer living in Stockholm, Sweden. Here you'll find the work I'm most proud of, and a collection of smaller projects I've done for fun. Check them out or read my story. Welcome.</p>
+                <div>
+                    <br></br>
+                    <p>Hi!</p>
+                    <p>I’m Anna, a future Front End Developer living in Stockholm, Sweden. Here you'll find the work I'm most proud of, and a collection of smaller projects I've done for fun. Check them out or read my story. Welcome. Skriver lite mer text så blir allt mkt bättre. </p>
+                    <nav>
+                        <Nav />
+                    </nav>
+                </div>
                 <img src={anna_square} alt="Image of Anna Pettersson, Front End Developer from Stockholm, Sweden." />
             </StyledDiv>
         </StyledDivBackr>

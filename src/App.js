@@ -1,7 +1,7 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import IntroSection from './IntroSection';
-import Nav from './Nav';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -15,28 +15,18 @@ function App() {
   return (
     <>
       <GlobalStyle></GlobalStyle>
-      <div>
-        <header>
-          <Header />
-          {/*
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-            </a>*/}
-        </header>
-        <main>
-          <section>
-            <IntroSection />
-          </section>
-          <nav>
-            <Nav />
-          </nav>
-        </main>
-      </div>
+      <Router>
+        <div>
+          <header>
+            <Header />
+          </header>
+          <main>
+            <section>
+              <IntroSection />
+            </section>
+          </main>
+        </div>
+      </Router>
     </>
   );
 }
