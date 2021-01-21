@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import { createGlobalStyle } from 'styled-components';
-
 import Header from './Header';
+import IntroSection from './IntroSection';
+import Nav from './Nav';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -18,7 +18,7 @@ function App() {
       <div>
         <header>
           <Header />
-          {/*<img src={logo} className="App-logo" alt="logo" />
+          {/*
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -28,6 +28,14 @@ function App() {
             Learn React
             </a>*/}
         </header>
+        <main>
+          <section>
+            <IntroSection />
+          </section>
+          <nav>
+            <Nav />
+          </nav>
+        </main>
       </div>
     </>
   );
