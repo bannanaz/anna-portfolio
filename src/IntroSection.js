@@ -10,7 +10,6 @@ background-color: #F4F9F7;
 
 const StyledDiv = styled.div`
 margin: auto;
-padding: 40px 0px;
 display: flex;
 justify-content: center;
 flex-wrap: wrap-reverse;
@@ -21,12 +20,17 @@ width: 85%;
 
 img {
     flex: 1;
-    max-width: 320px;
+    max-width: 380px;
     justify-content: center;
     border-radius: 50%;
     border: solid 20px white;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+    @media screen and (max-width: 1200px) {
+        max-width: 300px;
+    }
 }
 
 
@@ -34,10 +38,13 @@ img {
     flex: 1;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    max-width: 550px;
+    max-width: 500px;
     min-width: 200px;
-    margin-left: 40px;
     margin-right: 40px;
+
+    @media screen and (max-width: 1200px) {
+        max-width: 400px;
+    }
     }
 `;
 

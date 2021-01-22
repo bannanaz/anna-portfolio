@@ -11,10 +11,8 @@ margin-top: 20px;
     width: 85%;
     background-color: #F4F9F7;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     list-style-type: none;
-    margin-left: 40px;
-    margin-right; 40px;
     }
 `;
 
@@ -24,6 +22,7 @@ font-weight: bold;
 color: black;
 text-decoration: none;
 font-family: 'Permanent Marker', cursive;
+margin-right: 40px;
 `;
 
 
