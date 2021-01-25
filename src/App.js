@@ -2,6 +2,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import IntroSection from './IntroSection';
+import Footer from './Footer';
+
+import Work from './Work';
+import About from './About';
+import Contact from './Contact';
+
+
 
 const GlobalStyle = createGlobalStyle`
 
@@ -17,14 +24,20 @@ function App() {
       <GlobalStyle></GlobalStyle>
       <Router>
         <div>
-          <header>
             <Header />
-          </header>
-          <main>
-            <section>
-              <IntroSection />
-            </section>
-          </main>
+            <IntroSection />
+            <Switch>
+                <Route path='/about'>
+                    <About />
+                </Route>
+                <Route path='/work'>
+                    <Work />
+                </Route>
+                <Route path='/contact'>
+                    <Contact />
+                </Route>
+            </Switch>
+            <Footer />
         </div>
       </Router>
     </>
