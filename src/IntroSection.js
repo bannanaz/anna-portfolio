@@ -15,35 +15,63 @@ justify-content: center;
 flex-wrap: wrap-reverse;
 align-items: center;
 background-color: #F4F9F7;
-width: 85%;
+width: 90%;
 
 
 img {
-    flex: 1;
-    max-width: 380px;
+    max-width: 360px;
     justify-content: center;
     border-radius: 50%;
     border: solid 20px white;
-    margin-left: 40px;
+    margin-left: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
     
     @media screen and (max-width: 1200px) {
         max-width: 300px;
+        margin-left: 20px;
+    }
+
+     @media screen and (max-width: 1000px) {
+        max-width: 250px;
+        border: solid 15px white;
+        margin-left: 20px;
+
+    }
+     @media screen and (max-width: 900px) {
+        max-width: 350px;
+        border: solid 20px white;
+        margin-left: 0px;
     }
 }
 
 
  p {    
-    flex: 1;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    max-width: 500px;
+    max-width: 550px;
     min-width: 200px;
-    margin-right: 40px;
+    font-size: 20px;
+    margin-right: 30px;
 
     @media screen and (max-width: 1200px) {
-        max-width: 400px;
+        max-width 400px;
+         font-size: 18px;    
+         margin-right: 10px;   
+    }
+
+     @media screen and (max-width: 900px) {
+        max-width: 600px;
+        text-align: center;
+        margin-right: 0px;
+    }
+    }
+
+    p:first-of-type {
+        padding-top: 70px;
+  
+
+      @media screen and (max-width: 900px) {
+        padding-top: 0px;   
     }
     }
 `;
@@ -55,8 +83,7 @@ function IntroSection() {
         <StyledDivBackr>
             <StyledDiv>
                 <div>
-                    <br></br>
-                    <p>Hi!</p>
+                    <p>Hi,</p>
                     <p>I’m Anna, a future Front End Developer living in Stockholm, Sweden. Here you'll find the work I'm most proud of, and a collection of smaller projects I've done for fun. Check them out or read my story. Welcome. Skriver lite mer text så blir allt mkt bättre. </p>
                     <nav>
                         <Nav />

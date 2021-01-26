@@ -1,6 +1,6 @@
 function Work() {
     return (
-        <h1>Work!</h1>
+        <h2>Work!</h2>
     );
 }
 export default Work;

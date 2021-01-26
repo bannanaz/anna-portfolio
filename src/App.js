@@ -24,20 +24,20 @@ function App() {
       <GlobalStyle></GlobalStyle>
       <Router>
         <div>
-            <Header />
-            <IntroSection />
-            <Switch>
-                <Route path='/about'>
-                    <About />
-                </Route>
-                <Route path='/work'>
-                    <Work />
-                </Route>
-                <Route path='/contact'>
-                    <Contact />
-                </Route>
-            </Switch>
-            <Footer />
+          <Header />
+          <IntroSection />
+          <Switch>
+            <Route path='/about'>
+              <About />
+            </Route>
+            <Route path='/contact'>
+              <Contact />
+            </Route>
+            <Route path='/'>
+              <Work />
+            </Route>
+          </Switch>
+          <Footer />
         </div>
       </Router>
     </>

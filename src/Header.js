@@ -31,17 +31,18 @@ flex-wrap: wrap-reverse;
     p {    
         flex: 1 0 300px;
         font-family: 'Arial';
-        font-size: 2.2vw;
+        font-size: 26px;
         color: #FD8A49;
         text-align: right;
         padding-top: 2em;
 
         @media (max-width: 1000px) {
-        font-size: 2.5vw;
+        font-size: 24px;
         }
 
         @media (max-width: 500px) {
         flex: 1 0 220px;
+        font-size: 24px;
         text-align: center; 
         padding-top: 4em;
         padding-bottom: 3em;
@@ -55,40 +56,44 @@ const StyledDiv = styled.div`
 
     h1 {
         font-family: 'Permanent Marker', cursive;
-        font-size: 7vw;
+        font-size: 8vw;
         text-align: left;
         color: white;
             @media (max-width: 1060px) {
-                font-size: 9vw; 
+                font-size: 10vw; 
+            }
+
+             @media (max-width: 500px) {
+                font-size: 12vw; 
             }
     }
 
     h1:first-of-type {
-        padding-top: 90px;
+        padding-top: 1em;
             @media (max-width: 1060px) {
-                padding-top: 0px;
+                padding-top: 1em;
             }
             @media (max-width: 500px) {
-                padding-top: 2em;
+                padding-top: 1em;
             }
     }
 
     h1:last-of-type {
-        padding-bottom: 0.8em;
+        padding-bottom: 1em;
     }
 `;
 
 function Header() {
     return (
         <StyledDiv1>
-        <StyledDivBackgr>
-            <StyledDiv>
-                <h1>ANNA</h1>
-                <h1>PETTERSSON</h1>
-                <h1>PORTFOLIO</h1>
-            </StyledDiv>
-            <p>&lt;Front End Developer/&gt;</p>
-        </StyledDivBackgr>
+            <StyledDivBackgr>
+                <StyledDiv>
+                    <h1>ANNA</h1>
+                    <h1>PETTERSSON</h1>
+                    <h1>PORTFOLIO</h1>
+                </StyledDiv>
+                <p>&lt;Front End Developer/&gt;</p>
+            </StyledDivBackgr>
         </StyledDiv1>
     )
 }

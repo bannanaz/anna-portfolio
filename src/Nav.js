@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const StyledDiv = styled.div`
@@ -8,21 +8,52 @@ background-color: #F4F9F7;
 margin-top: 20px;
 
     ul {
-    width: 85%;
     background-color: #F4F9F7;
     display: flex;
     justify-content: left;
     list-style-type: none;
     }
+
+     @media screen and (max-width: 900px) {
+     display: flex;    
+     justify-content: center;
+    }
+
 `;
 
-const StyledLink = styled(Link)`
-font-size: 32px;
+const activeClassName = 'nav-item-active'
+
+const StyledLink = styled(NavLink).attrs({ activeClassName })`
+font-size: 30px;
 font-weight: bold;
 color: black;
 text-decoration: none;
 font-family: 'Permanent Marker', cursive;
-margin-right: 40px;
+margin-top: 10px;
+margin-right: 60px;
+margin-bottom: 40px;
+
+&:hover{
+    cursor: pointer;
+    color: lightgray;
+}
+
+
+ &.${activeClassName} {
+    color: #FD8A49;
+  }
+
+   @media screen and (max-width: 1200px) {
+        font-size: 26px;
+        margin-right: 40px;
+    }
+
+
+ @media screen and (max-width: 900px) {
+        font-size: 26px;
+        margin-right: 30px;
+        margin-left : 30px;
+    }
 `;
 
 
@@ -30,7 +61,7 @@ function Nav() {
     return (
         <StyledDiv>
             <ul>
-                <StyledLink to="/work">Work</StyledLink>
+                <StyledLink exact to="/">Work</StyledLink>
                 <StyledLink to="/about">About</StyledLink>
                 <StyledLink to="/contact">Contact</StyledLink>
             </ul>
