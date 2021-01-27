@@ -6,7 +6,7 @@ import bgtopmobile from './img/bgtopmobile.png';
 const StyledDiv1 = styled.div`
 width: 100%;
 margin: auto;
-background-image: url(${bgtop});   
+background-image: url(${bgtop});
 background-size: 100%;
 background-repeat: no-repeat;
 

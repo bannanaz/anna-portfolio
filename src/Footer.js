@@ -25,6 +25,10 @@ div {
   display: flex; 
   flex-direction: column;
   width: 200px;
+  align-items: left;
+     @media screen and (max-width: 500px) {
+        align-items: center;
+    }
 }
 
  h3 {
@@ -43,7 +47,6 @@ div {
 `;
 
 const StyledDivRightSection = styled.div`
-min-width: 200px;
 display: flex; 
 flex-direction: column;
 align-items: flex-end;
@@ -61,6 +64,8 @@ p {
   font-family: 'Permanent Marker', cursive;
   font-size: 14px;
   margin-bottom: 10px;
+  text-align: right;
+  width: 220px;
 }
 
 `;
