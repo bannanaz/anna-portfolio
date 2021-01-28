@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
       border: none;
     }
   }
+
+  body {
+    height: 100%;
+  }
 `
 
 function App() {

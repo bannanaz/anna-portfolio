@@ -19,11 +19,13 @@ height: auto;
 
 const StyledDivLeftSection = styled.div`
 display: flex; 
+width: 70%;
  
 
 div {
   display: flex; 
   flex-direction: column;
+  flex-wrap: wrap;
   width: 200px;
   align-items: left;
      @media screen and (max-width: 500px) {
@@ -55,15 +57,20 @@ flex: 1;
 
 img {
   flex: 1;
-  transform: scale(1.8);
+  transform: scale(1.3);
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  @media screen and (max-width: 500px) {
+    transform: scale(1.9);
 }
+}
+
+
 
 p {
   font-family: 'Permanent Marker', cursive;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   text-align: right;
   width: 220px;
 }

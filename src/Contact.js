@@ -5,7 +5,7 @@ const StyledDivBackgr = styled.div`
 width: 100%;
 margin: auto;
 background-image: url(${bgcontact});
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
 
     form {
@@ -24,21 +24,45 @@ background-repeat: no-repeat;
         color: white;
         font-size: 50px;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 40px;
+        }
     }
 
     input[type=text] {
         flex: 1 1 60px;
-        width: 500px;
+        max-width: 500px;
         margin: 10px;
         border-radius: 10px;
+
+        @media screen and (max-width: 1000px) {
+            flex: 1 1 50px;
+            max-width: 400px;
+        }
+
+        @media screen and (max-width: 500px) {
+            flex: 1 1 40px;
+            width: 85%;
+        }
         
     }
 
     input[type=textarea] {
-        flex: 1 1 250px;
-        width: 500px;
+        max-width: 500px;
+        min-width: 200px;
         margin: 20px;
         border-radius: 10px;
+
+        @media screen and (max-width: 1000px) {
+            flex: 1 1 200px;
+            max-width: 400px;
+        }
+
+        @media screen and (max-width: 500px) {
+            flex: 1 1 180px;
+            width: 85%;
+        }
     }
 
      input[type=submit] {
@@ -51,7 +75,13 @@ background-repeat: no-repeat;
         color: white;
         background-color: #FD8A49;
         border: none;
+        @media screen and (max-width: 500px) {
+            font-size: 22px;
+            width: 160px;
+            height: 50px;
+        }
     }
+   
 }
 `;
 

@@ -19,6 +19,11 @@ margin-top: 20px;
      justify-content: center;
     }
 
+    @media screen and (max-width: 500px) {
+        display: flex;    
+        flex-direction: column;
+       }
+
 `;
 
 const activeClassName = 'nav-item-active'
@@ -48,11 +53,14 @@ margin-bottom: 40px;
         margin-right: 40px;
     }
 
-
  @media screen and (max-width: 900px) {
-        font-size: 26px;
         margin-right: 30px;
         margin-left : 30px;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-right: 15px;
+        margin-left : 15px;
     }
 `;
 

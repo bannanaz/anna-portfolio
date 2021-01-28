@@ -20,6 +20,7 @@ width: 90%;
 
 img {
     max-width: 360px;
+    min-width: 190px;
     justify-content: center;
     border-radius: 50%;
     border: solid 20px white;
@@ -43,13 +44,17 @@ img {
         border: solid 20px white;
         margin-left: 0px;
     }
+
+    @media screen and (max-width: 900px) {
+        width: 80%;
+    }
 }
 
 
  p {    
     font-family: 'Open Sans', sans-serif;
     max-width: 550px;
-    min-width: 200px;
+    min-width: 150px;
     font-size: 20px;
     margin-right: 30px;
 
@@ -64,6 +69,11 @@ img {
         text-align: center;
         margin-right: 0px;
     }
+
+    @media screen and (max-width: 500px) {
+        width: 85%;
+        text-align: center;
+        margin: auto;
     }
 
     p:first-of-type {

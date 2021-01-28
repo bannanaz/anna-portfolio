@@ -6,9 +6,11 @@ import bgtopmobile from './img/bgtopmobile.png';
 const StyledDiv1 = styled.div`
 width: 100%;
 margin: auto;
-background-image: url(${bgtop});
-background-size: 100%;
+background-image: url(${bgtop}); 
+background-position: center;
 background-repeat: no-repeat;
+background-size: cover;
+
 
 @media (max-width: 500px) {
     background-image: url(${bgtopmobile});
@@ -16,7 +18,7 @@ background-repeat: no-repeat;
 `;
 
 
-const StyledDivBackgr = styled.div`
+const StyledDiv2 = styled.div`
 width: 85%;
 margin: auto;
 display: flex;
@@ -49,10 +51,6 @@ flex-wrap: wrap-reverse;
         }
 
     }
-`;
-
-
-const StyledDiv = styled.div`
 
     h1 {
         font-family: 'Permanent Marker', cursive;
@@ -69,31 +67,33 @@ const StyledDiv = styled.div`
     }
 
     h1:first-of-type {
-        padding-top: 1em;
+        padding-top: 180px;
             @media (max-width: 1060px) {
                 padding-top: 1em;
             }
             @media (max-width: 500px) {
-                padding-top: 1em;
+                padding-top: 3em;
             }
     }
 
     h1:last-of-type {
         padding-bottom: 1em;
     }
+
 `;
+
 
 function Header() {
     return (
         <StyledDiv1>
-            <StyledDivBackgr>
-                <StyledDiv>
+            <StyledDiv2>
+                <div>
                     <h1>ANNA</h1>
                     <h1>PETTERSSON</h1>
                     <h1>PORTFOLIO</h1>
-                </StyledDiv>
+                </div>
                 <p>&lt;Front End Developer/&gt;</p>
-            </StyledDivBackgr>
+            </StyledDiv2>
         </StyledDiv1>
     )
 }
