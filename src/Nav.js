@@ -12,18 +12,22 @@ margin-top: 20px;
     display: flex;
     justify-content: left;
     list-style-type: none;
-    }
-
+  
      @media screen and (max-width: 900px) {
      display: flex;    
      justify-content: center;
     }
 
     @media screen and (max-width: 500px) {
+        width: 50%;
+        margin: auto;
+        padding-top: 5px;
+        padding-bottom: 50px;
         display: flex;    
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
        }
-
+    }
 `;
 
 const activeClassName = 'nav-item-active'
@@ -43,13 +47,12 @@ margin-bottom: 40px;
     color: lightgray;
 }
 
-
  &.${activeClassName} {
     color: #FD8A49;
   }
 
    @media screen and (max-width: 1200px) {
-        font-size: 26px;
+        font-size: 28px;
         margin-right: 40px;
     }
 
@@ -62,6 +65,12 @@ margin-bottom: 40px;
         margin-right: 15px;
         margin-left : 15px;
     }
+
+    @media screen and (max-width: 500px) {
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+       }
 `;
 
 

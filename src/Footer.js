@@ -13,19 +13,25 @@ height: auto;
   width: 85%;
   margin: auto;
   background-color: #F4F9F7;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  @media screen and (max-width: 500px) {
+    padding-bottom: 2px;
+}
   }
   `;
 
 const StyledDivLeftSection = styled.div`
 display: flex; 
-width: 70%;
- 
+flex-wrap: wrap;
+@media screen and (max-width: 500px) {
+  justify-content: center;
+}
+
 
 div {
   display: flex; 
   flex-direction: column;
-  flex-wrap: wrap;
   width: 200px;
   align-items: left;
      @media screen and (max-width: 500px) {
@@ -37,7 +43,7 @@ div {
     font-family: 'Permanent Marker', cursive;
     font-size: 20px;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 
   a {
@@ -62,9 +68,9 @@ img {
   margin-bottom: 15px;
   @media screen and (max-width: 500px) {
     transform: scale(1.9);
+    margin-top: 0px;
 }
 }
-
 
 
 p {
@@ -91,7 +97,6 @@ function Footer() {
           </div>
           <div>
             <h3>CONTACT</h3>
-            <a href="mailto: anlepet@gmail.com">anlepet@gmail.com</a>
             <a href="https://www.linkedin.com/in/anlepet/" target="_blank">Linkedin</a>
           </div>
         </StyledDivLeftSection>

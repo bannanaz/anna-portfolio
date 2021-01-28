@@ -77,7 +77,7 @@ flex-wrap: wrap-reverse;
     }
 
     h1:last-of-type {
-        padding-bottom: 1em;
+        padding-bottom: 150px;;
     }
 
 `;

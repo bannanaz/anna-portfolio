@@ -104,7 +104,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit}>
                 <h2>SAY HELLO!</h2>
                 <input type="email" id="email" placeholder="Your e-mail" required ></input>
-                <input type="textarea" id="message" placeholder="Your message" required></input>
+                <input type="textarea" id="message" placeholder="Write something to Anna" required></input>
                 <button type="submit">{status}</button>
             </form>
     </StyledDivBackgr> 
