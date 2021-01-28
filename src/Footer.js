@@ -63,7 +63,7 @@ flex: 1;
 
 img {
   flex: 1;
-  transform: scale(1.3);
+  transform: scale(1.8);
   margin-top: 40px;
   margin-bottom: 15px;
   @media screen and (max-width: 500px) {
