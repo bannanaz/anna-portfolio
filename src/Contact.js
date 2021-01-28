@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import bgcontact from './img/bgcontact.jpg';
+import { useState } from 'react';
 
 const StyledDivBackgr = styled.div`
 width: 100%;
@@ -30,42 +31,29 @@ background-repeat: no-repeat;
         }
     }
 
-    input[type=text] {
-        flex: 1 1 60px;
-        max-width: 500px;
+    input[type=email] {
+        width: 450px;
+        height: 50px;
         margin: 10px;
         border-radius: 10px;
-
-        @media screen and (max-width: 1000px) {
-            flex: 1 1 50px;
-            max-width: 400px;
-        }
-
-        @media screen and (max-width: 500px) {
-            flex: 1 1 40px;
+        padding: 0px 10px;
+        @media screen and (max-width: 600px) {
             width: 85%;
         }
-        
     }
 
     input[type=textarea] {
-        max-width: 500px;
-        min-width: 200px;
+        flex: 1 1 200px;
+        width: 450px;
         margin: 20px;
         border-radius: 10px;
-
-        @media screen and (max-width: 1000px) {
-            flex: 1 1 200px;
-            max-width: 400px;
-        }
-
-        @media screen and (max-width: 500px) {
-            flex: 1 1 180px;
+        padding: 0px 10px;
+        @media screen and (max-width: 600px) {
             width: 85%;
         }
     }
 
-     input[type=submit] {
+     button {
         margin-top: 20px;
         width: 180px;
         height: 60px;
@@ -81,21 +69,47 @@ background-repeat: no-repeat;
             height: 50px;
         }
     }
-   
 }
-`;
+`; 
 
-function Contact() {
-    return (
-        <StyledDivBackgr>
-            <form>
+
+const Contact = () => {
+  const [status, setStatus] = useState("Submit");
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    
+    const { email, message } = e.target.elements;
+    let details = {
+      email: email.value,
+      message: message.value,
+    };
+
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {"Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+
+  };
+
+  return (
+    <StyledDivBackgr>
+            <form onSubmit={handleSubmit}>
                 <h2>SAY HELLO!</h2>
-                <input type="text" placeholder="Your e-mail"></input>
-                <input type="textarea" placeholder="Your message"></input>
-                <input type="submit" value="SKICKA"></input>
+                <input type="email" id="email" placeholder="Your e-mail" required ></input>
+                <input type="textarea" id="message" placeholder="Your message" required></input>
+                <button type="submit">{status}</button>
             </form>
-        </StyledDivBackgr>
-    );
-}
+    </StyledDivBackgr> 
+  );
+};
+
 export default Contact;
 
