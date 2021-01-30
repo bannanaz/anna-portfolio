@@ -50,7 +50,6 @@ img {
     }
 }
 
-
  p {    
     font-family: 'Open Sans', sans-serif;
     max-width: 550px;
@@ -79,14 +78,11 @@ img {
     p:first-of-type {
         padding-top: 70px;
   
-
       @media screen and (max-width: 900px) {
         padding-top: 0px;   
     }
-    }
+}
 `;
-
-
 
 function IntroSection() {
     return (
