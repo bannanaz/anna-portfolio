@@ -4,7 +4,8 @@ import { useState } from 'react';
 
 const StyledDivBackgr = styled.div`
 width: 100%;
-margin: auto;
+margin-left: auto;
+margin-right: auto;
 background-image: url(${bgcontact});
 background-size: cover;
 background-repeat: no-repeat;

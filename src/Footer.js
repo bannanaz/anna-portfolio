@@ -11,9 +11,9 @@ height: auto;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 85%;
-  margin: auto;
-  background-color: #F4F9F7;
-  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
   padding-bottom: 30px;
   @media screen and (max-width: 500px) {
     padding-bottom: 2px;
@@ -42,7 +42,6 @@ div {
  h3 {
     font-family: 'Permanent Marker', cursive;
     font-size: 20px;
-    padding-top: 30px;
     padding-bottom: 5px;
   }
 
@@ -58,17 +57,14 @@ const StyledDivRightSection = styled.div`
 display: flex; 
 flex-direction: column;
 align-items: flex-end;
-align-content: baseline;
+align-content: top;
+margin-bottom: 5 px;
 flex: 1;
 
 img {
   flex: 1;
-  transform: scale(1.8);
-  margin-top: 40px;
-  margin-bottom: 15px;
   @media screen and (max-width: 500px) {
     transform: scale(1.9);
-    margin-top: 0px;
 }
 }
 

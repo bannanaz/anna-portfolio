@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import IntroSection from './IntroSection';
@@ -8,6 +9,9 @@ import Work from './Work';
 import About from './About';
 import Contact from './Contact';
 
+import PROJECTS from './data.js';
+
+import { useState, useEffect } from 'react';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -44,6 +48,7 @@ function App() {
             </Route>
             <Route path='/'>
               <Work />
+
             </Route>
           </Switch>
           <Footer />
