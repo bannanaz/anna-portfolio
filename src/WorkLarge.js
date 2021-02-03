@@ -59,10 +59,9 @@ margin-right: 15px;
     }
 
     a {
-        font-weight: bold;
         text-decoration: none;
         color: black;
-        font-size: 18px;
+        font-size: 16px;
 
         &:hover{
         cursor: pointer;
@@ -109,11 +108,12 @@ const WorkLarge = (props) => {
                         <h2>{item.title}</h2>
                         <p>{item.body}</p>
                         <br></br>
-                        <p>View code at: <a href={item.github} target="_blank">GitHub</a></p>
+                         
                         <StyledDivIcon>
                             <p>{item.html5}</p>
-                            <p>{item.css}</p>
+                            <p>{item.css}</p> 
                             <p>{item.js}</p>
+                            <a href={item.github} target="_blank">View code at GitHub</a>
                         </StyledDivIcon>
                     </StyledDivText>
                     <img src={item.image} />

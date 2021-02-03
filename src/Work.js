@@ -12,7 +12,6 @@ const Work = (props) => {
         <div>
             <WorkLarge data={PROJECTS.projectsList.filter((item) => item.category === 'large')} />
             <WorkSmall data={PROJECTS.projectsList.filter((item) => item.category === 'small')} />
-            <Contact />
         </div>
     );
 }

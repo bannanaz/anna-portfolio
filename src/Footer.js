@@ -32,7 +32,7 @@ flex-wrap: wrap;
 div {
   display: flex; 
   flex-direction: column;
-  width: 200px;
+  width: 250px;
   align-items: left;
      @media screen and (max-width: 500px) {
         align-items: center;
@@ -94,6 +94,7 @@ function Footer() {
           <div>
             <h3>CONTACT</h3>
             <a href="https://www.linkedin.com/in/anlepet/" target="_blank">Linkedin</a>
+            <a href="mailto:anlepet@gmail.com">Mail: anlepet@gmail.com</a>
           </div>
         </StyledDivLeftSection>
 

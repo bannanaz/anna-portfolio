@@ -2,12 +2,12 @@
 import styled from 'styled-components';
 
 
-const StyledDiv = styled.div`
+const StyledDivFrame = styled.div`
 width: 85%;
 margin-left: auto;
 margin-right: auto;
 margin-top: 60px;
-margin-bottom: 80px;
+margin-bottom: 60px;
 
     h2 {
         font-family: 'Permanent Marker', cursive;
@@ -18,53 +18,62 @@ margin-bottom: 80px;
     p{
         text-align: center;
     }
+
+    > div {
+        display: flex; 
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 30px;
+    }
 `;
 
 const StyledDivFlex = styled.div`
-display: flex;
-flex-wrap: wrap;
-Justify-content: space-between;
 margin-top: 25px;
 align-items: baseline; 
+width: 48%;
 
     img {
-        margin-top: 25px; 
         margin-bottom: 7px;
-        max-width: 550px;
-        flex-shrink: 1;
+        width: 95%;
         border: solid 15px #F4F9F7;
     }
 `;
 
 const StyledDivFlex2 = styled.div`
+    width: 100%;
     display: flex; 
-    flex-wrap-nowrap; 
+    flex-wrap: nowrap; 
     justify-content: space-between;
-    align-items: top;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     div:first-of-type {
-        display: flex;
-        flex-direction: column;
         margin-left: 15px;
 
         a {
             text-decoration: none;
             color: black;
+            font-size: 16px;
+            margin-top: 3px;
+    
+
+            &:hover{
+                cursor: pointer;
+                color: lightgray;
+                }
         }
     }
 
     div:last-of-type {
         display: flex;
         justify-content: right;
-        align-items: baseline; 
-        margin-right: 15px;
+        align-items: top; 
+
 
         p:nth-of-type(1) {
         font-size: 28px;
-        margin: 0px 15px;
+        margin-right: 15px;
         color: rgb(24,147,206);
-        
         }
 
         p:nth-of-type(2) {
@@ -86,12 +95,12 @@ const StyledDivFlex2 = styled.div`
 
 const WorkSmall = (props) => {
     return (
-        <StyledDiv>
-            <h2>SMALLER PROJECTS</h2>
-            <p>Leearning the craft of code, Lorem ... </p>
-            <StyledDivFlex>
+        <StyledDivFrame>
+        <h2>SMALLER PROJECTS</h2>
+        <p>Leearning the craft of code, Lorem ... </p>
+            <div>
                 {props.data.map((item) => (
-                    <div key={item.id}>
+                    <StyledDivFlex key={item.id}>
                         <img src={item.image} />
                         <StyledDivFlex2>
                             <div>
@@ -104,10 +113,10 @@ const WorkSmall = (props) => {
                                 <p>{item.js}</p>
                             </div>
                         </StyledDivFlex2>
-                    </div>
+                    </StyledDivFlex>
                 ))}
-            </StyledDivFlex>
-        </StyledDiv>
+            </div>
+        </StyledDivFrame>
     );
 }
 export default WorkSmall;
