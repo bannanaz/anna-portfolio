@@ -8,6 +8,9 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 60px;
 margin-bottom: 60px;
+@media screen and (max-width: 1200px) {
+    width: 90%;
+}
 
     h2 {
         font-family: 'Permanent Marker', cursive;
@@ -64,6 +67,7 @@ const StyledDivFlex2 = styled.div`
     margin-right: auto;     
 
     div:first-of-type {
+        margin-left: 15px;
 
         a {
             text-decoration: none;

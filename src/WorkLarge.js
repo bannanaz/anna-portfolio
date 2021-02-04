@@ -6,6 +6,9 @@ width: 85%;
 margin-left: auto;
 margin-right: auto;
 margin-top: 80px;
+@media screen and (max-width: 1200px) {
+    width: 90%;
+}
 `;
 
 const StyledDivFlex = styled.div`
@@ -18,7 +21,7 @@ width: 100%;
   @media screen and (max-width: 900px) {
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: center;
+    justify-content: left;
 }
 
     img {
@@ -35,8 +38,12 @@ width: 100%;
 `;
 
 const StyledDivText = styled.div`
-min-width: 280px;
 margin-right: 15px;
+margin-left: 15px;
+@media screen and (max-width: 900px) {
+    width: 85%;
+}
+
 @media screen and (max-width: 900px) {
     width: 100%;
 }
@@ -45,8 +52,8 @@ margin-right: 15px;
         margin-bottom: 10px;
         padding-top: 80px;
 
-         @media screen and (max-width: 900px) {
-            padding-top: 40px;
+         @media screen and (max-width: 1000px) {
+            padding-top: 25px;
         }
     }
 
@@ -110,12 +117,11 @@ const WorkLarge = (props) => {
                         <h2>{item.title}</h2>
                         <p>{item.body}</p>
                         <br></br>
-                         
+                        <a href={item.github} target="_blank">View code at GitHub</a>
                         <StyledDivIcon>
                             <p>{item.html5}</p>
                             <p>{item.css}</p> 
                             <p>{item.js}</p>
-                            <a href={item.github} target="_blank">View code at GitHub</a>
                         </StyledDivIcon>
                     </StyledDivText>
                     <img src={item.image} />

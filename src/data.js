@@ -1,8 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
-
+import { faHtml5, faCss3Alt, faJs } from '@fortawesome/free-brands-svg-icons';
 
 const PROJECTS = {
     "projectsList": [

@@ -1,10 +1,7 @@
 
-
-import styled from 'styled-components';
 import WorkLarge from './WorkLarge';
 import WorkSmall from './WorkSmall';
 import PROJECTS from './data.js';
-import Contact from './Contact';
 
 
 const Work = (props) => {

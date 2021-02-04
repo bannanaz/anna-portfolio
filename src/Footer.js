@@ -6,24 +6,24 @@ width: 100%;
 background-color: #F4F9F7;
 height: auto;
 
-> div {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+main {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  @media screen and (max-width: 500px) {
-    padding-bottom: 2px;
-}
+  @media screen and (max-width: 1200px) {
+    width: 90%;
   }
+}
+}
   `;
 
 const StyledDivLeftSection = styled.div`
-display: flex; 
-flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
 @media screen and (max-width: 500px) {
   justify-content: center;
 }
@@ -82,7 +82,7 @@ p {
 function Footer() {
   return (
     <StyledDivBackgr>
-      <div>
+      <main>
         <StyledDivLeftSection>
           <div>
             <h3>PLATFORMS</h3>
@@ -91,16 +91,15 @@ function Footer() {
           </div>
           <div>
             <h3>CONTACT</h3>
+            <a href="mailto:anlepet@gmail.com">Mail</a>
             <a href="https://www.linkedin.com/in/anlepet/" target="_blank">Linkedin</a>
-            <a href="mailto:anlepet@gmail.com">E-mail</a>
           </div>
         </StyledDivLeftSection>
-
-        <StyledDivRightSection>
+      <StyledDivRightSection>
           <img src={bird_icon} alt="Birdie" />
           <p>COPYRIGHT ANNA PETTERSSON</p>
         </StyledDivRightSection>
-      </div>
+        </main>
     </StyledDivBackgr>
   );
 }
