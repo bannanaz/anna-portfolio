@@ -25,6 +25,11 @@ margin-bottom: 60px;
         flex-wrap: wrap;
         width: 100%;
         margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: 900px) {
+            justify-content: center;
+        }
     }
 `;
 
@@ -32,12 +37,21 @@ const StyledDivFlex = styled.div`
 margin-top: 25px;
 align-items: baseline; 
 width: 48%;
+margin-left: auto;
+margin-right: auto;
+@media screen and (max-width: 900px) {
+    width: 100%;
+  
+}
 
     img {
+        box-sizing: border-box;
         margin-bottom: 7px;
-        width: 95%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         border: solid 15px #F4F9F7;
-    }
+      
 `;
 
 const StyledDivFlex2 = styled.div`
@@ -46,9 +60,10 @@ const StyledDivFlex2 = styled.div`
     flex-wrap: nowrap; 
     justify-content: space-between;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;     
 
     div:first-of-type {
-        margin-left: 15px;
 
         a {
             text-decoration: none;

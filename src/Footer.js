@@ -32,7 +32,7 @@ flex-wrap: wrap;
 div {
   display: flex; 
   flex-direction: column;
-  width: 250px;
+  width: 200px;
   align-items: left;
      @media screen and (max-width: 500px) {
         align-items: center;
@@ -58,16 +58,16 @@ display: flex;
 flex-direction: column;
 align-items: flex-end;
 align-content: top;
-margin-bottom: 5 px;
+margin-bottom: 5px;
 flex: 1;
 
 img {
   flex: 1;
-  @media screen and (max-width: 500px) {
-    transform: scale(1.9);
+  margin-bottom: 15px;
+  @media screen and (max-width: 800px) {
+    transform: scale(2);
 }
 }
-
 
 p {
   font-family: 'Permanent Marker', cursive;
@@ -76,9 +76,7 @@ p {
   text-align: right;
   width: 220px;
 }
-
 `;
-
 
 
 function Footer() {
@@ -94,7 +92,7 @@ function Footer() {
           <div>
             <h3>CONTACT</h3>
             <a href="https://www.linkedin.com/in/anlepet/" target="_blank">Linkedin</a>
-            <a href="mailto:anlepet@gmail.com">Mail: anlepet@gmail.com</a>
+            <a href="mailto:anlepet@gmail.com">E-mail</a>
           </div>
         </StyledDivLeftSection>
 

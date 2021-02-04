@@ -14,30 +14,32 @@ justify-content: space-between;
 align-items: top;
 margin-top: 40px;
 margin-bottom: 40px;
+width: 100%;
   @media screen and (max-width: 900px) {
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: left;
-    width: 90%;
+    justify-content: center;
 }
 
     img {
-        max-width: 900px;
-        min-width: 500px;
-        flex-shrink: 1;
+        box-sizing: border-box;
+        width: 60%;
         border: solid 15px #F4F9F7;
         margin-left: 15px;
             @media screen and (max-width: 900px) {
+            box-sizing: border-box;
+            width: 100%;
             margin-left: 0px;
-            min-width: 100px;
         }
     }
 `;
 
 const StyledDivText = styled.div`
 min-width: 280px;
-flex-shrink: 2;
 margin-right: 15px;
+@media screen and (max-width: 900px) {
+    width: 100%;
+}
 
     h2 {
         margin-bottom: 10px;
