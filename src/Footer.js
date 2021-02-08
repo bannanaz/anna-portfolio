@@ -50,6 +50,11 @@ div {
     text-decoration: none;
     line-height: 1.4;
     color: black;
+
+     &:hover {
+      cursor: pointer;
+      color: lightgray;
+      }
   }
 `;
 
@@ -64,6 +69,7 @@ flex: 1;
 img {
   flex: 1;
   margin-bottom: 15px;
+  transform: scale(1.9);
   @media screen and (max-width: 800px) {
     transform: scale(2);
 }
@@ -95,11 +101,11 @@ function Footer() {
             <a href="https://www.linkedin.com/in/anlepet/" target="_blank">Linkedin</a>
           </div>
         </StyledDivLeftSection>
-      <StyledDivRightSection>
+        <StyledDivRightSection>
           <img src={bird_icon} alt="Birdie" />
           <p>COPYRIGHT ANNA PETTERSSON</p>
         </StyledDivRightSection>
-        </main>
+      </main>
     </StyledDivBackgr>
   );
 }

@@ -6,7 +6,7 @@ const PROJECTS = {
 
         {
             "title": "Museum landing page",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "body": "MUSEUM is a fictional museum for modern art, architecture and design. The landing page is responsive with a layout created with flexbox. It consists of a top menu, a section for current and upcoming exhibitions and a form for newsletter sign-ups. Javascript is used to validate the form input.",
             "image": "https://raw.githubusercontent.com/bannanaz/images/main/img/museum.jpg",
             "github": " ",
             "html5": <FontAwesomeIcon icon={faHtml5} />,
@@ -19,9 +19,9 @@ const PROJECTS = {
         },
         {
             "title": "Multifunctional notebook",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "body": "Quire is a multifunctional notebook in your browser. It allows you to create and personalise your notes and store them in local storage. It’s also possible to mark a note as favourite, search for notes and delete them. Quire is responsive, compatible with Chrome, Firefox and Safari, and available in dark mode.",
             "image": "https://raw.githubusercontent.com/bannanaz/images/main/img/quire.png",
-            "github": " ",
+            "github": "https://github.com/Zztorp/fe20tp1_marker",
             "html5": <FontAwesomeIcon icon={faHtml5} />,
             "css": <FontAwesomeIcon icon={faCss3Alt} />,
             "js": <FontAwesomeIcon icon={faJs} />,

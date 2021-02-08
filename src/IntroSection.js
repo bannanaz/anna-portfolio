@@ -73,13 +73,13 @@ function IntroSection() {
             <StyledDiv>
                 <StyledDiv2>
                     <p>Hi!</p>
-                    <p>I'm Anna, a junior Front-End Developer living in Stockholm, Sweden. Here you'll find the work I'm most proud of, and a collection of smaller projects I've done for fun. Check them out or read my story. Welcome. Skriver lite mer text så blir allt mkt bättre. </p>
+                    <p>I'm Anna, a junior front-end developer living in Stockholm, Sweden. Here you'll find the work I'm most proud of, and a collection of smaller projects I've done for fun. Check them out or read my story. Best regards, Anna.</p>
                     <nav>
                         <Nav />
                     </nav>
                 </StyledDiv2>
-                <img src={anna_square} alt="Image of Anna Pettersson, Front End Developer from Stockholm, Sweden." />
-            </StyledDiv> 
+                <img src={anna_square} alt="Image of Anna Pettersson, junior front-end developer from Stockholm, Sweden." />
+            </StyledDiv>
         </StyledDivBackr>
     )
 }

@@ -107,7 +107,6 @@ margin-top: 10px;
     }
 `;
 
-
 const WorkLarge = (props) => {
     return (
         <StyledDiv>
@@ -120,7 +119,7 @@ const WorkLarge = (props) => {
                         <a href={item.github} target="_blank">View code at GitHub</a>
                         <StyledDivIcon>
                             <p>{item.html5}</p>
-                            <p>{item.css}</p> 
+                            <p>{item.css}</p>
                             <p>{item.js}</p>
                         </StyledDivIcon>
                     </StyledDivText>

@@ -11,12 +11,10 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 
-
 @media (max-width: 500px) {
     background-image: url(${bgtopmobile});
 } 
 `;
-
 
 const StyledDiv2 = styled.div`
 width: 85%;
@@ -25,7 +23,6 @@ display: flex;
 justify-content: space-between;
 flex-wrap: wrap-reverse;
 
-
     @media (max-width: 500px) {
         flex-wrap: wrap;
     }
@@ -33,7 +30,7 @@ flex-wrap: wrap-reverse;
     p {    
         flex: 1 0 300px;
         font-family: 'Arial';
-        font-size: 26px;
+        font-size: 28px;
         color: #FD8A49;
         text-align: right;
         padding-top: 2em;
@@ -49,7 +46,6 @@ flex-wrap: wrap-reverse;
         padding-top: 4em;
         padding-bottom: 3em;
         }
-
     }
 
     h1 {
@@ -67,7 +63,7 @@ flex-wrap: wrap-reverse;
     }
 
     h1:first-of-type {
-        padding-top: 180px;
+        padding-top: 140px;
             @media (max-width: 1060px) {
                 padding-top: 1em;
             }
@@ -79,9 +75,7 @@ flex-wrap: wrap-reverse;
     h1:last-of-type {
         padding-bottom: 150px;;
     }
-
 `;
-
 
 function Header() {
     return (
@@ -92,7 +86,7 @@ function Header() {
                     <h1>PETTERSSON</h1>
                     <h1>PORTFOLIO</h1>
                 </div>
-                <p>&lt;Front End Developer/&gt;</p>
+                <p>&lt;front-end developer /&gt;</p>
             </StyledDiv2>
         </StyledDiv1>
     )

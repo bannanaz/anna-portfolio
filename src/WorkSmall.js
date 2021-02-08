@@ -11,17 +11,6 @@ margin-bottom: 60px;
 @media screen and (max-width: 1200px) {
     width: 90%;
 }
-
-    h2 {
-        font-family: 'Permanent Marker', cursive;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    p{
-        text-align: center;
-    }
-
     > div {
         display: flex; 
         justify-content: space-between;
@@ -36,6 +25,23 @@ margin-bottom: 60px;
     }
 `;
 
+const StyledDiv = styled.div`
+display: flex; 
+flex-direction: column; 
+max-width: 500px;
+
+  h2 {
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-align: center;
+    }
+`;
+
 const StyledDivFlex = styled.div`
 margin-top: 25px;
 align-items: baseline; 
@@ -44,9 +50,7 @@ margin-left: auto;
 margin-right: auto;
 @media screen and (max-width: 900px) {
     width: 100%;
-  
 }
-
     img {
         box-sizing: border-box;
         margin-bottom: 7px;
@@ -54,7 +58,7 @@ margin-right: auto;
         margin-left: auto;
         margin-right: auto;
         border: solid 15px #F4F9F7;
-      
+    }          
 `;
 
 const StyledDivFlex2 = styled.div`
@@ -76,10 +80,10 @@ const StyledDivFlex2 = styled.div`
             margin-top: 3px;
     
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 color: lightgray;
-                }
+            }
         }
     }
 
@@ -110,13 +114,13 @@ const StyledDivFlex2 = styled.div`
     }
 `;
 
-
-
 const WorkSmall = (props) => {
     return (
         <StyledDivFrame>
-        <h2>SMALLER PROJECTS</h2>
-        <p>Leearning the craft of code, Lorem ... </p>
+            <StyledDiv>
+                <h2>SMALLER PROJECTS</h2>
+                <p>Learning the craft of coding is a fun and mind changing experience. These are my steps along the way.  </p>
+            </StyledDiv>
             <div>
                 {props.data.map((item) => (
                     <StyledDivFlex key={item.id}>

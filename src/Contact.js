@@ -8,62 +8,57 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const StyledDivBackgr = styled.div`
 width: 100%;
+height: 350px;
 background-image: url(${bgcontact});
 background-size: cover;
 background-repeat: no-repeat;
 
     main {
-        width: 50%;
-        margin: auto;
-        padding-top: 40px;
-        padding-bottom: 40px;
         color: white;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      
+        h2 {
+            font-family: 'Permanent Marker', cursive;
+            color: white;
+            font-size: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 1.3em;
 
-    h2 {
-        font-family: 'Permanent Marker', cursive;
-        color: white;
-        font-size: 50px;
-        margin-bottom: 10px;
-        text-align: center;
+            @media screen and (max-width: 500px) {
+                font-size: 40px;
+            }
+        }    
 
-        @media screen and (max-width: 500px) {
-            font-size: 40px;
+        a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 20px;
+            font-size: 26px;
+            display: block;
+            line-height: 1.5em;
+            text-align: center;
+            font-weight: bold;
         }
-    }
 `;
 
-const StyledDivSection = styled.div`
-margin-bottom: 20px; 
-margin-top: 20px; 
 
-a { 
-    color: white; 
-    text-decoration: none; 
-    margin-left: 20px;
-    font-size: 22px;
-    display: block;
-    line-height: 1.5em;
-}
-
-
-`
 
 
 const Contact = () => {
-  return (
-    <StyledDivBackgr> 
-        <main>
-            <h2>SAY HELLO!</h2>
-            <StyledDivSection>
-                <a href="mailto:anlepet@gmail.com">Mail: anlepet@gmail.com</a>
-                <a href="tel:0709-301246">Phone: +46 709-30 12 45</a>
-                <a href="https://www.linkedin.com/in/anlepet/" target="_blank">Linkedin</a>
-            </StyledDivSection>        
-        </main>
-    </StyledDivBackgr>
-  
-    );
-  }
+    return (
+        <StyledDivBackgr>
+            <main>
+                <h2>SAY HELLO!</h2>
+                <a href="mailto:anlepet@gmail.com"> anlepet@gmail.com</a>
+                <a href="tel:0709-301246">+46 709-30 12 45</a>
+                <a href="https://www.linkedin.com/in/anlepet/" target="_blank"> Linkedin</a>
+            </main>
+        </StyledDivBackgr>
 
-  export default Contact;
+    );
+}
+
+export default Contact;
