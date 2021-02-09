@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bird_icon from './img/bird_icon.svg';
+import Weather from './Weather';
 
 const StyledDivBackgr = styled.div`
 width: 100%;
@@ -8,82 +8,99 @@ height: auto;
 
 main {
   width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (max-width: 1200px) {
-    width: 90%;
-  }
+  margin-left: auto; 
+  margin-right: auto; 
+  display: flex; 
+  justify-content: space-between; 
+  flex-wrap: wrap;
+      @media screen and (max-width: 1200px) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: 780px) {
+        display: flex;
+        flex-direction: column;
+        align-content: center; 
+        align-items: center;  
+      }
 }
-}
-  `;
+`;
 
 const StyledDivLeftSection = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 30px;
-
-@media screen and (max-width: 500px) {
-  justify-content: center;
-}
-
-
-div {
-  display: flex; 
-  flex-direction: column;
-  width: 200px;
-  align-items: left;
-     @media screen and (max-width: 500px) {
-        align-items: center;
+    @media screen and (max-width: 780px) {
+      display: flex;
+      flex-direction: column; 
+      align-content: center;
+      text-align: center;
+      padding-bottom: 0px;
     }
-}
 
- h3 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20px;
-    padding-bottom: 5px;
-  }
+    div {
+      display: flex; 
+      flex-direction: column;
+      width: 200px;
+      align-items: left;
+    }
 
-  a {
-    font-size: 20px;
-    text-decoration: none;
-    line-height: 1.4;
-    color: black;
+    h2 {
+      font-family: 'Permanent Marker', cursive;
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
 
-     &:hover {
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      line-height: 1.4;
+      color: black;
+      font-family: 'Open Sans', sans-serif;
+
+    &:hover {
       cursor: pointer;
       color: lightgray;
       }
-  }
+    }
 `;
 
 const StyledDivRightSection = styled.div`
 display: flex; 
 flex-direction: column;
-align-items: flex-end;
-align-content: top;
-margin-bottom: 5px;
-flex: 1;
+flex-wrap: wrap;
+padding-top: 20px;
+padding-bottom: 30px;
+    @media screen and (max-width: 780px) {
+      padding-top: 0px;
+    }
 
-img {
-  flex: 1;
-  margin-bottom: 15px;
-  transform: scale(1.9);
-  @media screen and (max-width: 800px) {
-    transform: scale(2);
-}
-}
-
-p {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 14px;
-  margin-bottom: 3px;
-  text-align: right;
-  width: 220px;
-}
+    h2 {
+      font-family: 'Permanent Marker', cursive;
+      padding-top: 15px;
+      text-align: right;
+         @media screen and (max-width: 780px) {
+            text-align: center;
+          }
+    }
 `;
 
+const StyledDivCopy = styled.div`
+width: 95%;
+margin-left: auto; 
+margin-right: auto; 
+display: flex; 
+justify-content: center;
+
+  p { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #97c2a8;
+    padding-bottom: 10px; 
+  }
+`;
 
 function Footer() {
   return (
@@ -91,21 +108,26 @@ function Footer() {
       <main>
         <StyledDivLeftSection>
           <div>
-            <h3>PLATFORMS</h3>
+            <h2>PLATFORMS</h2>
             <a href="https://github.com/bannanaz" target="_blank">GitHub</a>
             <a href="https://www.instagram.com/anpettersson/" target="_blank">Instagram</a>
           </div>
           <div>
-            <h3>CONTACT</h3>
+            <h2>CONTACT</h2>
             <a href="mailto:anlepet@gmail.com">Mail</a>
             <a href="https://www.linkedin.com/in/anlepet/" target="_blank">Linkedin</a>
           </div>
         </StyledDivLeftSection>
         <StyledDivRightSection>
-          <img src={bird_icon} alt="Birdie" />
-          <p>COPYRIGHT ANNA PETTERSSON</p>
+          {/*<h2>STHLM WEATHER</h2>*/}
+          <Weather />
+          <h2>STOCKHOLM</h2>
+          {/*<img src={bird_icon} alt="Birdie" />*/}
         </StyledDivRightSection>
       </main>
+      <StyledDivCopy>
+        <p>Copyright Anna Pettersson, 2021.</p>
+      </StyledDivCopy>
     </StyledDivBackgr>
   );
 }

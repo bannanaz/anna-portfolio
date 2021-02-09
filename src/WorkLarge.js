@@ -5,10 +5,13 @@ const StyledDiv = styled.div`
 width: 85%;
 margin-left: auto;
 margin-right: auto;
-margin-top: 80px;
-@media screen and (max-width: 1200px) {
-    width: 90%;
-}
+margin-top: 60px;
+    @media screen and (max-width: 1200px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 700px) {
+    margin-top: 50px;
+    }
 `;
 
 const StyledDivFlex = styled.div`
@@ -18,59 +21,58 @@ align-items: top;
 margin-top: 40px;
 margin-bottom: 40px;
 width: 100%;
-  @media screen and (max-width: 900px) {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: left;
-}
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: left;
+    }
+    @media screen and (max-width: 700px) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 
-    img {
+    img { 
         box-sizing: border-box;
         width: 60%;
         border: solid 15px #F4F9F7;
         margin-left: 15px;
             @media screen and (max-width: 900px) {
-            box-sizing: border-box;
-            width: 100%;
-            margin-left: 0px;
-        }
-    }
+                box-sizing: border-box;
+                width: 100%;
+                margin-left: 0px;
+            }
+        }    
 `;
 
 const StyledDivText = styled.div`
 margin-right: 15px;
 margin-left: 15px;
-@media screen and (max-width: 900px) {
-    width: 85%;
-}
-
-@media screen and (max-width: 900px) {
-    width: 100%;
-}
+        @media screen and (max-width: 900px) {
+            width: 85%;
+        }
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
 
     h2 {
         margin-bottom: 10px;
         padding-top: 80px;
-
-         @media screen and (max-width: 1000px) {
-            padding-top: 25px;
-        }
+            @media screen and (max-width: 1000px) {
+                padding-top: 25px;
+            }
+             @media screen and (max-width: 700px) {
+                padding-top: 20px;
+            }
     }
 
-    p{
-        font-size: 16px;
-         @media screen and (max-width: 1100px) {
-            font-size: 14px;
-        }
-         @media screen and (max-width: 900px) {
-            font-size: 16px;
-        }
+    p {
+        font-size: 18px;
     }
 
     a {
         text-decoration: none;
         color: black;
-        font-size: 16px;
+        font-size: 18px;
 
         &:hover{
         cursor: pointer;
@@ -85,12 +87,10 @@ flex-wrap: nowrap;
 align-items: baseline;
 margin-top: 10px;
 
-
     p:nth-of-type(1) {
         font-size: 28px;
         margin-right: 15px;
         color: rgb(24,147,206);
-        
     }
 
     p:nth-of-type(2) {

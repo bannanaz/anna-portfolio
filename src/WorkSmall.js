@@ -8,9 +8,14 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 60px;
 margin-bottom: 60px;
-@media screen and (max-width: 1200px) {
-    width: 90%;
-}
+    @media screen and (max-width: 1200px) {
+        width: 90%;
+    } 
+    @media screen and (max-width: 700px) {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    } 
+    
     > div {
         display: flex; 
         justify-content: space-between;
@@ -28,7 +33,6 @@ margin-bottom: 60px;
 const StyledDiv = styled.div`
 display: flex; 
 flex-direction: column; 
-max-width: 500px;
 
   h2 {
         font-family: 'Permanent Marker', cursive;
@@ -39,6 +43,18 @@ max-width: 500px;
 
     p {
         text-align: center;
+        font-size: 20px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+            @media screen and (max-width: 1200px) {
+                font-size: 18px;      
+            }
+            @media screen and (max-width: 900px) {
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+            }
     }
 `;
 
@@ -48,9 +64,12 @@ align-items: baseline;
 width: 48%;
 margin-left: auto;
 margin-right: auto;
-@media screen and (max-width: 900px) {
-    width: 100%;
-}
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 700px) {
+        margin-top: 10px;
+    }
     img {
         box-sizing: border-box;
         margin-bottom: 7px;
@@ -66,18 +85,27 @@ const StyledDivFlex2 = styled.div`
     display: flex; 
     flex-wrap: nowrap; 
     justify-content: space-between;
+    margin-top: 7px;
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;     
 
     div:first-of-type {
-        margin-left: 15px;
+        margin-left: 5px;
+
+        h2 {
+            font-size: 22px;
+                @media screen and (max-width: 900px) {
+                    font-size: 1.5em;
+                    font-weight: bolder;
+                }
+        }
 
         a {
             text-decoration: none;
             color: black;
-            font-size: 16px;
-            margin-top: 3px;
+            font-size: 18px;
+            margin-top: 5px;
     
 
             &:hover {
@@ -91,12 +119,12 @@ const StyledDivFlex2 = styled.div`
         display: flex;
         justify-content: right;
         align-items: top; 
-
+        margin-right: 5px;
 
         p:nth-of-type(1) {
-        font-size: 28px;
-        margin-right: 15px;
-        color: rgb(24,147,206);
+            font-size: 28px;
+            margin-right: 15px;
+            color: rgb(24,147,206);
         }
 
         p:nth-of-type(2) {
@@ -127,7 +155,7 @@ const WorkSmall = (props) => {
                         <img src={item.image} />
                         <StyledDivFlex2>
                             <div>
-                                <h3>{item.title}</h3>
+                                <h2>{item.title}</h2>
                                 <a href={item.github} target="_blank">View code at GitHub</a>
                             </div>
                             <div>

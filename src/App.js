@@ -9,10 +9,6 @@ import Work from './Work';
 import About from './About';
 import Contact from './Contact';
 
-import PROJECTS from './data.js';
-
-import { useState, useEffect } from 'react';
-
 
 const GlobalStyle = createGlobalStyle`
 

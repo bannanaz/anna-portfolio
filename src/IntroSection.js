@@ -16,25 +16,24 @@ flex-wrap: nowrap;
 align-items: center;
 background-color: #F4F9F7;
 width: 75%;
-@media screen and (max-width: 900px) {
-    flex-wrap: wrap-reverse;
-}
-
-img {
-    width: 32%;
-    justify-content: center;
-    border-radius: 50%;
-    border: solid 15px white;
-    margin-left: 30px;
-    margin-top: 40px;
-    margin-bottom: 40px;
- 
     @media screen and (max-width: 900px) {
-        width: 65%;
-        margin-left: 0px;
-    }
-}
+        flex-wrap: wrap-reverse;
+    }  
 
+    img {
+        width: 32%;
+        justify-content: center;
+        border-radius: 50%;
+        border: solid 15px white;
+        margin-left: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+ 
+            @media screen and (max-width: 900px) {
+            width: 70%;
+            margin-left: 0px;
+            }
+    }
 `;
 
 const StyledDiv2 = styled.div`
