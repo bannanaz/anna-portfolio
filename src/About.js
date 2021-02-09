@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Cv from './Cv';
+import CVWORK from './dataCv.js';
 
 const StyledDiv = styled.div`
 width: 85%;
@@ -14,7 +16,7 @@ margin-bottom: 40px;
         font-family: 'Permanent Marker', cursive;
         text-align: center;
         font-size: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     p {    
@@ -33,26 +35,29 @@ margin-bottom: 40px;
                 margin-right: auto;
             }
     }
+
+    > div:first-of-type {
+        margin-top: 30px;
+    }
+
+    > div:last-of-type {
+        margin-top: 8px;
+    }
 `;
 
 function About() {
     return (
         <StyledDiv>
             <h2>MY STORY</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <br></br>
-            <ul>
-                <h2>WORK</h2>
-                <li>IKEA</li>
-                <li>IKEA</li>
-                <li>IKEA</li>
-            </ul>
-            <ul>
+            <p>My interest in web development was sparked while working at IKEA Sweden’s marketing department. As a PR Specialist I worked close to the IKEA web-team and got glimpses of their work day. I would describe myself as creative with a logical mind, a perfect match for the front-end developer profession (I hope). I’m a good teammate and like to surround myself with fun and laughter. I’m used to, and enjoy working in a large (global) organisation delivering on several projects and deadlines simultaneously.</p>
+            <div>
+                <h2>WORK EXPERIENCE</h2>
+                <Cv dataCv={CVWORK.worklist.filter((item) => item.label === 'work')} />
+            </div>
+            <div>
                 <h2>EDUCATION</h2>
-                <li>IKEA</li>
-                <li>IKEA</li>
-                <li>IKEA</li>
-            </ul>
+                <Cv dataCv={CVWORK.worklist.filter((item) => item.label === 'education')} />
+            </div>
         </StyledDiv >
     );
 }

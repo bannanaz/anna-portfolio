@@ -82,14 +82,6 @@ const PROJECTS = {
             "id": 6,
             "category": "small"
         },
-
-
-
-
-
-
-
-
     ]
 }
 
