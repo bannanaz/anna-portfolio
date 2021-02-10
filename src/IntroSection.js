@@ -29,10 +29,15 @@ width: 75%;
         margin-top: 40px;
         margin-bottom: 40px;
  
-            @media screen and (max-width: 900px) {
+        @media screen and (max-width: 900px) {
             width: 70%;
             margin-left: 0px;
-            }
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 80%;
+            border: solid 10px white;
+        }
     }
 `;
 
@@ -77,7 +82,7 @@ function IntroSection() {
                         <Nav />
                     </nav>
                 </StyledDiv2>
-                <img src={anna_square} alt="Image of Anna Pettersson, junior front-end developer from Stockholm, Sweden." />
+                <img src={anna_square} alt="Anna Pettersson, junior front-end developer from Stockholm, Sweden." />
             </StyledDiv>
         </StyledDivBackr>
     )

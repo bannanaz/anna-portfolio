@@ -52,7 +52,7 @@ function Weather() {
 
     return (
         <StyledDiv>
-            <img src={!data.data ? '?' : IconURL + data.data.weather[0].icon + "@2x.png"} />
+            <img src={!data.data ? '?' : IconURL + data.data.weather[0].icon + "@2x.png"} alt="Illustrates current weather in Stockholm" />
             <p> {!data.data ? '?' : data.data.main.temp.toFixed(1)} °C</p>
         </StyledDiv>
     )

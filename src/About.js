@@ -43,7 +43,7 @@ margin-bottom: 20px;
     }
 
     > p:last-of-type {
-        color: #F4F9F7;
+            color: #e1ede5;
             font-size: 100px;
             text-align: center;
             line-height: 0.4;
@@ -54,7 +54,7 @@ margin-bottom: 20px;
         margin-top: 10px;
 
         > p:first-of-type {
-            color: #F4F9F7;
+            color: #e1ede5;
             font-size: 100px;
             text-align: center;
             line-height: 0.4;
@@ -66,7 +66,7 @@ margin-bottom: 20px;
         margin-top: 2px;
 
          > p:first-of-type {
-            color: #F4F9F7;
+            color: #e1ede5;
             font-size: 100px;
             text-align: center;
             line-height: 0.4;

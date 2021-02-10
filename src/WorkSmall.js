@@ -38,7 +38,7 @@ flex-direction: column;
         font-family: 'Permanent Marker', cursive;
         text-align: center;
         font-size: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     p {
@@ -77,7 +77,11 @@ margin-right: auto;
         margin-left: auto;
         margin-right: auto;
         border: solid 15px #F4F9F7;
-    }          
+
+        @media screen and (max-width: 600px) {
+            border: solid 10px #F4F9F7;
+        }   
+    }        
 `;
 
 const StyledDivFlex2 = styled.div`
@@ -152,7 +156,7 @@ const WorkSmall = (props) => {
             <div>
                 {props.data.map((item) => (
                     <StyledDivFlex key={item.id}>
-                        <img src={item.image} />
+                        <img src={item.image} alt="Example of smaller project" />
                         <StyledDivFlex2>
                             <div>
                                 <h2>{item.title}</h2>

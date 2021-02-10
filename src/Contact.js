@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 import bgcontact from './img/bgcontact.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-
 
 const StyledDivBackgr = styled.div`
 width: 100%;
@@ -47,6 +42,10 @@ position: relative;
             text-align: center;
             font-weight: bold;
 
+             @media screen and (max-width: 500px) {
+                font-size: 22px;
+            }
+
             &:hover {
                 cursor: pointer;
                 color: lightgray;
@@ -59,8 +58,8 @@ const Contact = () => {
         <StyledDivBackgr>
             <main>
                 <h2>SAY HELLO!</h2>
-                <a href="mailto:anlepet@gmail.com">Mail: anlepet@gmail.com</a>
-                <a href="tel:0709-301246">Phone: +46 709-30 12 45</a>
+                <a href="mailto:anlepet@gmail.com">anlepet@gmail.com</a>
+                <a href="tel:0709-301246">+46 709-30 12 45</a>
                 <a href="https://www.linkedin.com/in/anlepet/" target="_blank"> Linkedin</a>
             </main>
         </StyledDivBackgr>

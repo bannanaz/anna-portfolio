@@ -44,7 +44,7 @@ flex-wrap: wrap-reverse;
         font-size: 26px;
         text-align: center; 
         padding-top: 4em;
-        padding-bottom: 3em;
+        padding-bottom: 4em;
         }
     }
 
@@ -74,6 +74,12 @@ flex-wrap: wrap-reverse;
 
     h1:last-of-type {
         padding-bottom: 150px;
+        @media (max-width: 900px) {
+                padding-bottom: 100px;
+            }
+         @media (max-width: 600px) {
+                padding-bottom: 40px;
+            }
     }
 `;
 
