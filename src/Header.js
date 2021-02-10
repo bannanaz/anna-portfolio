@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import bgtop from './img/bgtop.png';
-import bgtopmobile from './img/bgtopmobile.png';
+import bgtop from './img/bgtop.jpg';
+import bgtopmobile from './img/bgtopmobile.jpg';
 
 
 const StyledDiv1 = styled.div`
