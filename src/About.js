@@ -6,24 +6,30 @@ const StyledDiv = styled.div`
 width: 85%;
 margin-left: auto;
 margin-right: auto;
-margin-top: 40px; 
-margin-bottom: 40px;
+margin-top: 60px; 
+margin-bottom: 20px;
     @media screen and (max-width: 1200px) {
         width: 90%;
     }
 
-    h2 {
+    h3 {
         font-family: 'Permanent Marker', cursive;
         text-align: center;
         font-size: 30px;
         margin-bottom: 15px;
     }
 
-    p {    
+     h2 {
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    > p:first-of-type {    
         font-family: 'Open Sans', sans-serif;
         text-align: center;
         font-size: 20px;
-        width: 60%;
+        width: 65%;
         margin-left: auto;
         margin-right: auto;
             @media screen and (max-width: 1200px) {
@@ -36,28 +42,55 @@ margin-bottom: 40px;
             }
     }
 
+    > p:last-of-type {
+        color: #F4F9F7;
+            font-size: 100px;
+            text-align: center;
+            line-height: 0.4;
+            margin-bottom: 50px;
+    }
+
     > div:first-of-type {
-        margin-top: 30px;
+        margin-top: 10px;
+
+        > p:first-of-type {
+            color: #F4F9F7;
+            font-size: 100px;
+            text-align: center;
+            line-height: 0.4;
+            margin-bottom: 25px;
+        }
     }
 
     > div:last-of-type {
-        margin-top: 8px;
+        margin-top: 2px;
+
+         > p:first-of-type {
+            color: #F4F9F7;
+            font-size: 100px;
+            text-align: center;
+            line-height: 0.4;
+            margin-bottom: 25px;
+        }
     }
 `;
 
 function About() {
     return (
         <StyledDiv>
-            <h2>MY STORY</h2>
-            <p>My interest in web development was sparked while working at IKEA Sweden’s marketing department. As a PR Specialist I worked close to the IKEA web-team and got glimpses of their work day. I would describe myself as creative with a logical mind, a perfect match for the front-end developer profession (I hope). I’m a good teammate and like to surround myself with fun and laughter. I’m used to, and enjoy working in a large (global) organisation delivering on several projects and deadlines simultaneously.</p>
+            <h3>MY STORY</h3>
+            <p>My interest in web development was sparked while working at IKEA Sweden’s marketing department. As a PR Specialist I worked close to the IKEA web-team and got glimpses of their work day. I would describe myself as creative with a logical mind, a perfect match for the front-end developer profession. I’m a good teammate and like to surround myself with fun and laughter. I’m used to, and enjoy working in a large (global) organisation delivering on several projects and deadlines simultaneously.</p>
             <div>
+                <p>•</p>
                 <h2>WORK EXPERIENCE</h2>
                 <Cv dataCv={CVWORK.worklist.filter((item) => item.label === 'work')} />
             </div>
             <div>
+                <p>•</p>
                 <h2>EDUCATION</h2>
                 <Cv dataCv={CVWORK.worklist.filter((item) => item.label === 'education')} />
             </div>
+            <p>•</p>
         </StyledDiv >
     );
 }

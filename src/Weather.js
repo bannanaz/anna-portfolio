@@ -17,8 +17,8 @@ margin-top: 15px;
         pading: 0px; 
         margin: 0px; 
         position: absolute; 
-        top: 24px;
-        left: 127px;
+        top: 15px;
+        left: 122px;
          
         @media screen and (max-width: 780px) {
             top: 25px;
