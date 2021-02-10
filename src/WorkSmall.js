@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 
 const StyledDivFrame = styled.div`
-width: 85%;
-margin-left: auto;
-margin-right: auto;
-margin-top: 60px;
-margin-bottom: 60px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
     @media screen and (max-width: 1200px) {
         width: 90%;
     } 
@@ -15,6 +16,9 @@ margin-bottom: 60px;
         margin-top: 40px;
         margin-bottom: 30px;
     } 
+    @media screen and(max - width: 400px) {
+        width: 95%;
+    }
     
     > div {
         display: flex; 
@@ -24,6 +28,7 @@ margin-bottom: 60px;
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
+
         @media screen and (max-width: 900px) {
             justify-content: center;
         }
@@ -47,29 +52,32 @@ flex-direction: column;
         width: 60%;
         margin-left: auto;
         margin-right: auto;
-            @media screen and (max-width: 1200px) {
-                font-size: 18px;      
-            }
-            @media screen and (max-width: 900px) {
-                width: 85%;
-                margin-left: auto;
-                margin-right: auto;
-            }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 18px;      
+        }
+        @media screen and (max-width: 900px) {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 `;
 
 const StyledDivFlex = styled.div`
-margin-top: 25px;
-align-items: baseline; 
-width: 48%;
-margin-left: auto;
-margin-right: auto;
+    margin-top: 25px;
+    align-items: baseline; 
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    
     @media screen and (max-width: 900px) {
         width: 100%;
     }
     @media screen and (max-width: 700px) {
         margin-top: 10px;
     }
+
     img {
         box-sizing: border-box;
         margin-bottom: 7px;
@@ -99,10 +107,11 @@ const StyledDivFlex2 = styled.div`
 
         h2 {
             font-size: 22px;
-                @media screen and (max-width: 900px) {
-                    font-size: 1.5em;
-                    font-weight: bolder;
-                }
+            
+            @media screen and (max-width: 900px) {
+                font-size: 1.5em;
+                font-weight: bolder;
+            }
         }
 
         a {
@@ -110,7 +119,6 @@ const StyledDivFlex2 = styled.div`
             color: black;
             font-size: 18px;
             margin-top: 5px;
-    
 
             &:hover {
                 cursor: pointer;

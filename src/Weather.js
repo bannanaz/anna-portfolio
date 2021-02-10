@@ -5,10 +5,10 @@ const url = "http://api.openweathermap.org/data/2.5/weather?q=stockholm,se&APPID
 const IconURL = "http://openweathermap.org/img/wn/";
 
 const StyledDiv = styled.div`
-width: 200px; 
-height: 50px; 
-position: relative;
-margin-top: 15px;
+    width: 200px; 
+    height: 50px; 
+    position: relative;
+    margin-top: 15px;
 
     p {
         font-size: 20px;
@@ -33,10 +33,10 @@ margin-top: 15px;
         top: -25px;
         left: 38px; 
 
-            @media screen and (max-width: 780px) {
-                top: -15px;
-                left: 10px;
-            }
+        @media screen and (max-width: 780px) {
+            top: -15px;
+            left: 10px;
+        }
     }
 `;
 

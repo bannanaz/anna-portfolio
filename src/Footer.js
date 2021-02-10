@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import Weather from './Weather';
 
 const StyledDivBackgr = styled.div`
-width: 100%;
-background-color: #F4F9F7;
-height: auto;
+  width: 100%;
+  background-color: #F4F9F7;
+  height: auto;
 
 main {
   width: 85%;
@@ -13,25 +13,24 @@ main {
   display: flex; 
   justify-content: space-between; 
   flex-wrap: wrap;
-      @media screen and (max-width: 1200px) {
-        width: 90%;
-      }
-
-      @media screen and (max-width: 780px) {
-        display: flex;
-        flex-direction: column;
-        align-content: center; 
-        align-items: center;  
-      }
+  @media screen and (max-width: 1200px) {
+      width: 90%;
+  }
+  @media screen and (max-width: 780px) {
+      display: flex;
+      flex-direction: column;
+      align-content: center; 
+      align-items: center;  
+  }
 }
 `;
 
 const StyledDivLeftSection = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 30px;
     @media screen and (max-width: 780px) {
       display: flex;
       flex-direction: column; 
@@ -68,31 +67,31 @@ const StyledDivLeftSection = styled.div`
 `;
 
 const StyledDivRightSection = styled.div`
-display: flex; 
-flex-direction: column;
-flex-wrap: wrap;
-padding-top: 20px;
-padding-bottom: 30px;
-    @media screen and (max-width: 780px) {
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  @media screen and (max-width: 780px) {
       padding-top: 0px;
-    }
+  }
 
     h2 {
       font-family: 'Permanent Marker', cursive;
       padding-top: 15px;
       text-align: right;
-         @media screen and (max-width: 780px) {
-            text-align: center;
-          }
+      @media screen and (max-width: 780px) {
+          text-align: center;
+      }
     }
 `;
 
 const StyledDivCopy = styled.div`
-width: 95%;
-margin-left: auto; 
-margin-right: auto; 
-display: flex; 
-justify-content: center;
+  width: 95%;
+  margin-left: auto; 
+  margin-right: auto; 
+  display: flex; 
+  justify-content: center;
 
   p { 
     font-family: 'Open Sans', sans-serif;

@@ -3,11 +3,11 @@ import Cv from './Cv';
 import CVWORK from './dataCv.js';
 
 const StyledDiv = styled.div`
-width: 85%;
-margin-left: auto;
-margin-right: auto;
-margin-top: 60px; 
-margin-bottom: 20px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px; 
+    margin-bottom: 20px;
     @media screen and (max-width: 1200px) {
         width: 90%;
     }

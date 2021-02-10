@@ -6,11 +6,13 @@ const StyledDiv1 = styled.div`
     margin-left: auto; 
     margin-right: auto;
     margin-top: 70px;
+
     @media screen and(max-width: 1200px) {
         width: 90%;
     }
     @media screen and(max - width: 700px) {
         margin-top: 40px;
+        width: 95%;
     }
 `;
 
@@ -21,6 +23,7 @@ const StyledDiv2 = styled.div`
     align-items: top;
     margin-top: 40px;
     margin-bottom: 40px;
+
     @media screen and (max-width: 700px) {
         margin-top: 20px;
         margin-bottom: 30px;
@@ -29,6 +32,7 @@ const StyledDiv2 = styled.div`
 
 const StyledDivText = styled.div`
     width: 38%;
+
     @media screen and (max-width: 900px) {
         width: 85%;
         margin-left: 15px;
@@ -37,9 +41,11 @@ const StyledDivText = styled.div`
     h2 {
         margin-bottom: 10px;
         padding-top: 80px;
+
         @media screen and (max-width: 1000px) {
             padding-top: 25px;
         }
+
         @media screen and (max-width: 700px) {
             padding-top: 20px;
         }
@@ -47,9 +53,11 @@ const StyledDivText = styled.div`
 
     p {
         font-size: 18px;
+
         @media screen and (max-width: 1200px) {
             font-size: 16px;
         }
+        
         @media screen and (max-width: 900px) {
             font-size: 18px;
         }
