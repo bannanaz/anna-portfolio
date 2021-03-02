@@ -42,7 +42,6 @@ const StyledDiv = styled.div`
 
 function Weather() {
     const [data, setData] = useState({ data: null });
-    console.log(data);
 
     useEffect(() => {
         fetch(url)

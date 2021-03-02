@@ -60,7 +60,7 @@ const Contact = () => {
                 <h2>SAY HELLO!</h2>
                 <a href="mailto:anlepet@gmail.com">anlepet@gmail.com</a>
                 <a href="tel:0709-301246">+46 709-30 12 45</a>
-                <a href="https://www.linkedin.com/in/anlepet/" target="_blank"> Linkedin</a>
+                <a href="https://www.linkedin.com/in/anlepet/"> Linkedin</a>
             </main>
         </StyledDivBackgr>
 

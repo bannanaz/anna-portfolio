@@ -108,13 +108,13 @@ function Footer() {
         <StyledDivLeftSection>
           <div>
             <h2>PLATFORMS</h2>
-            <a href="https://github.com/bannanaz" target="_blank">GitHub</a>
-            <a href="https://www.instagram.com/anpettersson/" target="_blank">Instagram</a>
+            <a href="https://github.com/bannanaz">GitHub</a>
+            <a href="https://www.instagram.com/anpettersson/">Instagram</a>
           </div>
           <div>
             <h2>CONTACT</h2>
             <a href="mailto:anlepet@gmail.com">Mail</a>
-            <a href="https://www.linkedin.com/in/anlepet/" target="_blank">Linkedin</a>
+            <a href="https://www.linkedin.com/in/anlepet/">Linkedin</a>
           </div>
         </StyledDivLeftSection>
         <StyledDivRightSection>

@@ -168,7 +168,7 @@ const WorkSmall = (props) => {
                         <StyledDivFlex2>
                             <div>
                                 <h2>{item.title}</h2>
-                                <a href={item.github} target="_blank">View code at GitHub</a>
+                                <a href={item.github}>View code at GitHub</a>
                             </div>
                             <div>
                                 <p>{item.html5}</p>

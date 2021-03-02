@@ -66,7 +66,7 @@ const StyledDivText = styled.div`
     a {
         text-decoration: none;
         color: black;
-        font-size: 18px;
+        font-size: 16px;
         
         &:hover {
             cursor: pointer;
@@ -119,7 +119,6 @@ const StyledImg = styled.img`
 
 `;
 
-
 const WorkLarge = (props) => {
     return (
         <StyledDiv1>
@@ -130,7 +129,10 @@ const WorkLarge = (props) => {
                             <h2>{item.title}</h2>
                             <p>{item.body}</p>
                             <br></br>
-                            <a href={item.github} target="_blank">View code at GitHub</a>
+                            <a href={item.visit}>Public version |</a>
+                            <a href={item.github}> View code at GitHub</a>
+
+
                             <StyledDivIcon>
                                 <p>{item.html5}</p>
                                 <p>{item.css}</p>
