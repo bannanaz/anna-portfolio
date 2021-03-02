@@ -11,8 +11,9 @@ const StyledDiv = styled.div`
     margin-top: 15px;
 
     p {
-        font-size: 20px;
+        font-size: 24px;
         font-family: 'Open Sans', sans-serif;
+        font-weight: bold; 
         color: black;
         pading: 0px; 
         margin: 0px; 
